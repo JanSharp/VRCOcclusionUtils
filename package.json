@@ -1,0 +1,18 @@
+{
+  "name": "com.jansharp.occlusion-utils",
+  "version": "1.0.0",
+  "description": "Little utilities to help with occlusion, specifically occlusion portals.",
+  "displayName": "Occlusion Utils",
+  "unity": "2019.4",
+  "author": {
+    "name": "JanSharp",
+    "email": "steinmeister36@gmail.com",
+    "url": "https://jansharp.github.io"
+  },
+  "license": "MIT",
+  "vpmDependencies": {
+    "com.vrchat.worlds": "^3.4.x"
+  },
+  "url": "https://github.com/JanSharp/VRCOcclusionUtils/releases/download/v1.0.0/com.jansharp.occlusion-utils.zip",
+  "changelogUrl": "https://github.com/JanSharp/VRCOcclusionUtils/blob/v1.0.0/CHANGELOG.md"
+}
