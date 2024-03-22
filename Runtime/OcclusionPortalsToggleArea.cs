@@ -9,7 +9,7 @@ namespace JanSharp
     public class OcclusionPortalsToggleArea : UdonSharpBehaviour
     {
         [Tooltip("When the player is inside of trigger colliders that are on this game objects, the portals "
-            + "will be open. Multiple colliders are supported.\n"
+            + "will be open. Multiple colliders are supported, all are forced to be triggers automatically.\n"
             + "The default open state of all these portals will be overwritten on Start."
         )]
         public OcclusionPortal[] portals;

@@ -29,4 +29,6 @@ If you ever thought that occlusion took colliders into consideration, now you'll
 
 Open and close an array of `Occlusion Portal`s within an area. When in the area, they are open, when outside, they are closed.
 
-The area is defined by 1 or more **trigger** colliders of any kind on the object with the `Occlusion Portals Toggle Area` script.
+The area is defined by 1 or more trigger colliders of any kind on the object with the `Occlusion Portals Toggle Area` script.
+
+Upon entering play mode or publishing, all colliders on the same object as the area script are automatically set to be trigger colliders.
