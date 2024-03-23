@@ -93,10 +93,11 @@ MonoBehaviour:
     - Name: tooltip
       Entry: 1
       Data: 'When the player is inside of trigger colliders that are on this game
-        objects, the portals will be open. Multiple colliders are supported.
+        objects, the portals will be open. Multiple colliders are supported, all
+        are forced to be triggers automatically.
 
-        The
-        default open state of all these portals will be overwritten on Start.'
+        The default open state
+        of all these portals will be overwritten on Start.'
     - Name: 
       Entry: 8
       Data: 
