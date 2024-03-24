@@ -13,6 +13,8 @@ namespace JanSharp
             + "The default open state of all these portals will be overwritten on Start."
         )]
         public OcclusionPortal[] portals;
+        [Tooltip("An optimization to reduce chance of issues when using only 1 trigger collider.")]
+        [SerializeField] private bool singleColliderMode = false;
         private int triggerCount;
 
         private void Start()
@@ -38,6 +40,11 @@ namespace JanSharp
         {
             if (!player.isLocal)
                 return;
+            if (singleColliderMode)
+            {
+                Open();
+                return;
+            }
             triggerCount++;
             if (triggerCount == 1)
                 Open();
@@ -45,8 +52,15 @@ namespace JanSharp
 
         public override void OnPlayerTriggerExit(VRCPlayerApi player)
         {
+            if (!player.isLocal)
+                return;
+            if (singleColliderMode)
+            {
+                Close();
+                return;
+            }
             // Checking for zero to handle cases where we didn't get the enter event.
-            if (!player.isLocal || triggerCount == 0)
+            if (triggerCount == 0)
                 return;
             triggerCount--;
             if (triggerCount == 0)
