@@ -3856,6 +3856,7 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 1349398464}
   portals:
   - {fileID: 615764105}
+  singleColliderMode: 0
 --- !u!135 &1349398466
 SphereCollider:
   m_ObjectHideFlags: 0
